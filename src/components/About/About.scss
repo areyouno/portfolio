@@ -1,0 +1,42 @@
+.div_about section em {
+       font-weight: bold;
+       margin-right: 1em;
+}
+
+.div_about h3 {
+       margin-top: 20px;
+       margin-bottom: 10px;
+       font-size: 1rem;
+}
+
+.section_timeline p {
+       padding-left: 50px;
+       text-indent: -50px;
+}
+
+.section_contact ul {
+       margin-top: 0;
+       margin-bottom: 10px;
+}
+
+.section_contact li {
+       font-size: 0.9rem;
+}
+
+/* p {
+       margin: 0 0 10px;
+       font-size: 0.9rem;
+} */
+.adaptive-glass {
+       --glass-lightness: 100%;
+       background: hsl(0, 0%, var(--glass-lightness) / 50%);
+       backdrop-filter: blur(40px);
+
+       @media (prefers-color-scheme: dark) {
+              --glass-lightness: 0%;
+       }
+
+       @supports not (backdrop-filter: blur(1px)) {
+              background: hsl(0, 0%, var(--glass-lightness) / 90%);
+       }
+}

@@ -1,0 +1,25 @@
+.div_main-nav {
+       width: 100%;
+}
+
+.ul_main-nav__items {
+       /* display: inline; */
+       list-style: none;
+       justify-content: space-around;
+       padding: 5px;
+       border-top: 2px solid #fafafa1a;
+}
+
+.main-nav__item {
+       /* margin: 1em; */
+}
+
+.main-nav__item:hover {
+       /* line circling around the borders, starting from the center bottom */
+}
+
+@media (min-width: 391px) {
+       .ul_main-nav__items {
+              border-top: 0;
+       }
+}

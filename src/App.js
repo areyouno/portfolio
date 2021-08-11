@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Experiences from './components/Experiences/Experiences';
+import Layout from './components/Layout/Layout';
+import Projects from './components/Projects/Projects.js';
+
+import './App.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+       let routes = (
+              <Route
+                     render={({ location }) => (
+                            <TransitionGroup>
+                                   <CSSTransition
+                                          key={location.key}
+                                          in={true}
+                                          appear={true}
+                                          timeout={450}
+                                          classNames="transition">
+                                          <Switch location={location}>
+                                                 <Route exact path="/">
+                                                        <Redirect to="/About" />
+                                                 </Route>
+                                                 <Route path="/About" component={About} />
+                                                 <Route exact path="/Experiences" component={Experiences} />
+                                                 <Route path="/Projects" component={Projects} />
+                                                 <Route path="/Contact" component={Contact} />
+                                          </Switch>
+                                   </CSSTransition>
+                            </TransitionGroup>
+                     )}
+              />
+       );
+       return (
+              <BrowserRouter>
+                     <Layout>{routes}</Layout>
+              </BrowserRouter>
+       );
 }
 
 export default App;
