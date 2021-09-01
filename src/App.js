@@ -1,12 +1,11 @@
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Experiences from './components/Experiences/Experiences';
-import Layout from './components/Layout/Layout';
-import Projects from './components/Projects/Projects.js';
-
-import './App.scss';
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import "./App.scss";
+import About from "./components/About/About";
+// import Contact from "./components/Contact/Contact";
+import Experiences from "./components/Experiences/Experiences";
+import Layout from "./components/Layout/Layout";
+import Projects from "./components/Projects/Projects";
 
 function App() {
        let routes = (
@@ -26,7 +25,7 @@ function App() {
                                                  <Route path="/About" component={About} />
                                                  <Route exact path="/Experiences" component={Experiences} />
                                                  <Route path="/Projects" component={Projects} />
-                                                 <Route path="/Contact" component={Contact} />
+                                                 {/* <Route path="/Contact" component={Contact} /> */}
                                           </Switch>
                                    </CSSTransition>
                             </TransitionGroup>

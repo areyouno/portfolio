@@ -1,11 +1,11 @@
-import React from 'react';
-import './About.scss';
+import React from "react";
+import "./About.scss";
 const about = () => {
        return (
-              <div className={['div_about', 'adaptive-glass'].join(' ')}>
+              <div className={["div_about", "adaptive-glass"].join(" ")}>
                      <span>
                             <section>
-                                   <h2>Rreuno Velasco</h2>
+                                   <h2 className={"about_header"}>Rreuno Velasco</h2>
                                    <p>Digital Craftsman (Developer/Designer)</p>
                             </section>
                      </span>
@@ -13,13 +13,13 @@ const about = () => {
                             <section>
                                    <h3>Work</h3>
                                    <p>
-                                          RR is a full-stack developer based in Manila with a passion for building
+                                          RR is a front-end developer based in Manila with a passion for building
                                           creatives. When not online, he loves to run outside.
                                    </p>
                             </section>
                      </span>
                      <span>
-                            <section className={'section_timeline'}>
+                            <section className={"section_timeline"}>
                                    <h3>Timeline</h3>
                                    <p>
                                           <em>1992</em>
@@ -38,11 +38,18 @@ const about = () => {
                             </section>
                      </span>
                      <span>
-                            <section className={'section_contact'}>
+                            <section className={"section_contact"}>
                                    <h3>Contact me</h3>
                                    <ul>
-                                          <li>LinkedIn</li>
-                                          <li>Gmail</li>
+                                          <li>
+                                                 <a
+                                                        href="https://www.linkedin.com/in/rreuno-v-96062939/"
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                        className={["contact_link"]}>
+                                                        LinkedIn
+                                                 </a>
+                                          </li>
                                    </ul>
                             </section>
                      </span>

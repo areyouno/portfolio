@@ -1,13 +1,12 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import memojiHand from '../../images/memoji-hand-yellow.png';
-import MenuBar from '../Navigation/MenuBar/MenuBar';
-
-import './Layout.scss';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import memojiHand from "../../images/memoji-hand-yellow.png";
+import MenuBar from "../Navigation/MenuBar/MenuBar";
+import "./Layout.scss";
 
 const layout = props => {
        const header = (
-              <div className={'div_header'}>
+              <div className={"div_header"}>
                      <NavLink to="/About" title="link to top page">
                             <img src={memojiHand} alt="memoji hand" width="100px" />
                      </NavLink>
@@ -16,9 +15,9 @@ const layout = props => {
               </div>
        );
        return (
-              <div className={'div_layout'}>
+              <div className={"div_layout"}>
                      {header}
-                     <div className={'div_main'}>{props.children}</div>
+                     <div className={"div_main"}>{props.children}</div>
               </div>
        );
 };

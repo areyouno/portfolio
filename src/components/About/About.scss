@@ -9,6 +9,13 @@
        font-size: 1rem;
 }
 
+.about_header {
+       margin-top: 0;
+       @media (min-width: 391px) {
+              margin-top: 0.83em;
+       }
+}
+
 .section_timeline p {
        padding-left: 50px;
        text-indent: -50px;
@@ -23,10 +30,10 @@
        font-size: 0.9rem;
 }
 
-/* p {
-       margin: 0 0 10px;
-       font-size: 0.9rem;
-} */
+a.contact_link {
+       color: #848fa5;
+}
+
 .adaptive-glass {
        --glass-lightness: 100%;
        background: hsl(0, 0%, var(--glass-lightness) / 50%);

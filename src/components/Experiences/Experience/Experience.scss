@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .div_experience > ul {
        text-align: justify;
@@ -11,10 +11,14 @@
        // list-style: none;
 }
 
+// .div_experience:active {
+//        outline: 2px dashed white;
+//        outline-offset: 3px;
+// }
+
 // .div_experience li::before {
 //        content: '→ ';
 //        margin-left: -5px;
-
 // }
 
 @media (min-width: $screen-sm-min) {
