@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/about/static/css/main.169e686b.chunk.css",
-    "main.js": "/about/static/js/main.9195fe32.chunk.js",
-    "main.js.map": "/about/static/js/main.9195fe32.chunk.js.map",
-    "runtime-main.js": "/about/static/js/runtime-main.79c9b4c6.js",
-    "runtime-main.js.map": "/about/static/js/runtime-main.79c9b4c6.js.map",
-    "static/js/2.062f722d.chunk.js": "/about/static/js/2.062f722d.chunk.js",
-    "static/js/2.062f722d.chunk.js.map": "/about/static/js/2.062f722d.chunk.js.map",
-    "static/js/3.fc3b8f8c.chunk.js": "/about/static/js/3.fc3b8f8c.chunk.js",
-    "static/js/3.fc3b8f8c.chunk.js.map": "/about/static/js/3.fc3b8f8c.chunk.js.map",
-    "index.html": "/about/index.html",
-    "static/css/main.169e686b.chunk.css.map": "/about/static/css/main.169e686b.chunk.css.map",
-    "static/js/2.062f722d.chunk.js.LICENSE.txt": "/about/static/js/2.062f722d.chunk.js.LICENSE.txt",
-    "static/media/memoji-hand-yellow.7da0176c.png": "/about/static/media/memoji-hand-yellow.7da0176c.png"
+    "main.css": "/portfolio/static/css/main.169e686b.chunk.css",
+    "main.js": "/portfolio/static/js/main.9195fe32.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9195fe32.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.8d4b2b30.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8d4b2b30.js.map",
+    "static/js/2.062f722d.chunk.js": "/portfolio/static/js/2.062f722d.chunk.js",
+    "static/js/2.062f722d.chunk.js.map": "/portfolio/static/js/2.062f722d.chunk.js.map",
+    "static/js/3.fc3b8f8c.chunk.js": "/portfolio/static/js/3.fc3b8f8c.chunk.js",
+    "static/js/3.fc3b8f8c.chunk.js.map": "/portfolio/static/js/3.fc3b8f8c.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.169e686b.chunk.css.map": "/portfolio/static/css/main.169e686b.chunk.css.map",
+    "static/js/2.062f722d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.062f722d.chunk.js.LICENSE.txt",
+    "static/media/memoji-hand-yellow.7da0176c.png": "/portfolio/static/media/memoji-hand-yellow.7da0176c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.79c9b4c6.js",
+    "static/js/runtime-main.8d4b2b30.js",
     "static/js/2.062f722d.chunk.js",
     "static/css/main.169e686b.chunk.css",
     "static/js/main.9195fe32.chunk.js"
