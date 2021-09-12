@@ -19,12 +19,10 @@ function App() {
                                           timeout={450}
                                           classNames="transition">
                                           <Switch location={location}>
-                                                 <Route exact path="/">
-                                                        <Redirect to="/About" />
-                                                 </Route>
                                                  <Route path="/About" component={About} />
                                                  <Route exact path="/Experiences" component={Experiences} />
                                                  <Route path="/Projects" component={Projects} />
+                                                 <Redirect from="/portfolio" to="/About" />
                                           </Switch>
                                    </CSSTransition>
                             </TransitionGroup>
