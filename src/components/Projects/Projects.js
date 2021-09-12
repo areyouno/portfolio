@@ -1,9 +1,9 @@
 import Button from "@material-ui/core/Button";
-import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import React from "react";
-// import "./Projects.scss";
+import "./Projects.scss";
 
 const Projects = () => {
        const useStyles = makeStyles(theme => ({
@@ -29,14 +29,8 @@ const Projects = () => {
        }));
        const classes = useStyles();
 
-       const theme = createTheme({
-              palette: {
-                     primary: { main: "#cd8e26" }
-              }
-       });
-
        return (
-              <div className={"div_projects"}>
+              <div className={"projects"}>
                      <span>
                             <section>
                                    <h2>Reminders app</h2>
@@ -44,6 +38,10 @@ const Projects = () => {
                                           A mock implementation of the Reminders app from Apple - where you add, edit,
                                           remove, and search through a list of reminders.
                                    </p>
+                                   <ul className={"projects__tech-list"}>
+                                          <li>React</li>
+                                          <li>SASS</li>
+                                   </ul>
                                    <Button
                                           variant="contained"
                                           size="medium"

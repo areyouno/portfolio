@@ -1,21 +1,20 @@
-import React, { useState } from 'react';
-import './Experiences.scss';
+import React, { useState } from "react";
+import "./Experiences.scss";
 
-import Experience from './Experience/Experience';
+import Experience from "./Experience/Experience";
 
 const Experiences = () => {
        const [id, setId] = useState(0);
-       const experiences = ['Accenture, Inc.', 'Asiagate Networks, Inc.', 'Ideyatech, Inc.'];
+       const experiences = ["Accenture, Inc.", "Asiagate Networks, Inc.", "Ideyatech, Inc."];
        const clickHandler = index => {
-              console.log(index);
               setId(index);
        };
 
        let exp = experiences.map((item, index) => {
               return (
-                     <li className="li_expi-list__item" key={index}>
+                     <li className="experiences__item" key={index}>
                             <button
-                                   className={id === index ? 'btn_expi button--active' : 'btn_expi'}
+                                   className={`${"experiences__button"} ${id === index ? " button--active" : ""}`}
                                    onClick={() => clickHandler(index)}>
                                    {item}
                             </button>
@@ -23,11 +22,11 @@ const Experiences = () => {
               );
        });
        return (
-              <div className={'div_experiences'}>
+              <div className={"experiences"}>
                      <span>
                             <section>
-                                   <h2>Where I've Worked</h2>
-                                   <ul className="ul_expi-list">{exp}</ul>
+                                   <h2 className={"experiences__header"}>Where I've Worked</h2>
+                                   <ul className="experiences__nav">{exp}</ul>
                             </section>
                      </span>
                      <Experience itemId={id} />

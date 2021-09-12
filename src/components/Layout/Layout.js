@@ -6,18 +6,18 @@ import "./Layout.scss";
 
 const layout = props => {
        const header = (
-              <div className={"div_header"}>
+              <header className={"layout__header"}>
                      <NavLink to="/About" title="link to top page">
-                            <img src={memojiHand} alt="memoji hand" width="100px" />
+                            <img className={"layout__image"} src={memojiHand} alt="memoji hand" width="100px" />
                      </NavLink>
                      <h1>RR</h1>
                      <MenuBar />
-              </div>
+              </header>
        );
        return (
-              <div className={"div_layout"}>
+              <div className={"layout"}>
                      {header}
-                     <div className={"div_main"}>{props.children}</div>
+                     <main className={"layout__main"}>{props.children}</main>
               </div>
        );
 };

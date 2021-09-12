@@ -1,28 +1,30 @@
 @import "../../variables.scss";
 
-.div_experience > ul {
-       text-align: justify;
-       padding-left: 1rem;
-}
+.experience {
+       & > ul {
+              text-align: justify;
+              padding-left: 1rem;
+       }
 
-.div_experience > ul > li {
-       margin-top: 1rem;
-       font-size: 0.9rem;
-       // list-style: none;
-}
+       & > ul > li {
+              margin-top: 1rem;
+              font-size: 0.9rem;
+              // list-style: none;
+       }
 
-// .div_experience:active {
-//        outline: 2px dashed white;
-//        outline-offset: 3px;
-// }
+       // .div_experience:active {
+       //        outline: 2px dashed white;
+       //        outline-offset: 3px;
+       // }
 
-// .div_experience li::before {
-//        content: '→ ';
-//        margin-left: -5px;
-// }
+       // .div_experience li::before {
+       //        content: '→ ';
+       //        margin-left: -5px;
+       // }
 
-@media (min-width: $screen-sm-min) {
-       .div_experience > ul {
-              max-width: 550px;
+       @media (min-width: $screen-sm-min) {
+              & > ul {
+                     max-width: 550px;
+              }
        }
 }

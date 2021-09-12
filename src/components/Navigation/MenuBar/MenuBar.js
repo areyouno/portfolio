@@ -1,7 +1,7 @@
-import React from 'react';
-import './MenuBar.scss';
+import React from "react";
+import "./MenuBar.scss";
 
-import NavigationItem from '../NavigationItem/NavigationItem';
+import NavigationItem from "../NavigationItem/NavigationItem";
 
 // function NavigationLink({ to, path, children }) {
 //        const isActive = to === path ? ' active' : '';
@@ -14,8 +14,8 @@ import NavigationItem from '../NavigationItem/NavigationItem';
 
 const MenuBar = () => {
        return (
-              <div className={'div_main-nav'}>
-                     <ul className={'ul_main-nav__items'}>
+              <div className={"layout__nav"}>
+                     <ul className={"layout__nav-items"}>
                             <NavigationItem link="/About">About</NavigationItem>
                             <NavigationItem link="/Experiences">Experience</NavigationItem>
                             <NavigationItem link="/Projects">Projects</NavigationItem>

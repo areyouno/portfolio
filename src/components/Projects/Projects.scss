@@ -1,0 +1,19 @@
+.projects {
+       & p {
+              background: #008187;
+              padding: 0.5em 0 1em 1em;
+              color: black;
+              font-weight: bold;
+              border-radius: 0.3rem;
+       }
+
+       &__tech-list {
+              padding-left: 0;
+       }
+
+       &__tech-list li {
+              display: inline-block;
+              //   margin-top: 0.5em;
+              margin-right: 2em;
+       }
+}

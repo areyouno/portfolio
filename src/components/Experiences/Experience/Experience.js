@@ -6,10 +6,10 @@ const Experience = props => {
        if (props.itemId === 0) {
               exp = (
                      <ul>
-                            <li>Responsible for the project’s service and change requests from clients</li>
+                            <li>Responsible for the project’s service and change requests from clients.</li>
                             <li>
                                    Supported a variety of different languages and frameworks such as Java, Node.js,
-                                   AngularJS, DBMS (PLSQL, MySQL, MSSQL)
+                                   AngularJS, DBMS (PLSQL, MySQL, MSSQL).
                             </li>
                             <li>
                                    Led a report automation initiative to automate five reports used by the client which
@@ -37,7 +37,7 @@ const Experience = props => {
                      </ul>
               );
        }
-       return <div className={"div_experience"}>{exp}</div>;
+       return <div className={"experience"}>{exp}</div>;
 };
 
 export default Experience;

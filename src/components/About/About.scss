@@ -1,37 +1,59 @@
-.div_about section em {
-       font-weight: bold;
-       margin-right: 1em;
-}
-
-.div_about h3 {
-       margin-top: 20px;
-       margin-bottom: 10px;
-       font-size: 1rem;
-}
-
-.about_header {
-       margin-top: 0;
-       @media (min-width: 391px) {
-              margin-top: 0.83em;
+.about {
+       &__header {
+              margin-top: 0;
+              @media (min-width: 500px) {
+                     margin-top: 0.83em;
+              }
        }
-}
 
-.section_timeline p {
-       padding-left: 50px;
-       text-indent: -50px;
-}
+       &__subheader {
+              margin-top: 20px;
+              margin-bottom: 10px;
+              font-size: 1rem;
+       }
 
-.section_contact ul {
-       margin-top: 0;
-       margin-bottom: 10px;
-}
+       &__timeline-item {
+              padding-left: 50px;
+              text-indent: -50px;
+       }
 
-.section_contact li {
-       font-size: 0.9rem;
-}
+       &__timeline-year {
+              font-weight: bold;
+              margin-right: 1em;
+       }
 
-a.contact_link {
-       color: #848fa5;
+       &__section-contact {
+              & ul {
+                     margin-top: 0;
+                     margin-bottom: 10px;
+              }
+
+              & li {
+                     font-size: 0.9rem;
+              }
+
+              & a {
+                     position: relative;
+                     list-style: none;
+                     color: #848fa5;
+                     text-decoration: none;
+                     transition: clip-path 275ms ease;
+
+                     &:hover::before {
+                            text-decoration: underline;
+                            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                     }
+
+                     &::before {
+                            position: absolute;
+                            content: attr(data-content);
+                            color: #ffebc6;
+
+                            clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+                            transition: clip-path 275ms ease;
+                     }
+              }
+       }
 }
 
 .adaptive-glass {

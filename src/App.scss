@@ -1,32 +1,22 @@
-// @use postcss-nested;
-
 .App {
        text-align: center;
 }
 
 p {
-       margin: 0 0 10px;
+       margin: 0 0 1em;
        font-size: 0.9rem;
 }
 
-.div_about,
-.div_experiences,
-.div_projects {
+.about,
+.experiences,
+.projects {
        position: absolute; //for css transition - 1 component is covering another effect
        width: 85%;
-       float: left;
        z-index: 1;
-       // width: 85vw;
-}
-
-@media (min-width: 500px) {
-       .div_about,
-       .div_experiences,
-       .div_projects {
-              float: left;
-              width: 90%;
-              /* position: absolute; */
-              // margin-top: 9rem;
-              // max-width: 515px;
+       @media (min-width: 500px) {
+              & {
+                     float: left;
+                     width: 90%;
+              }
        }
 }
