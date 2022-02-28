@@ -1,71 +1,72 @@
 .about {
-       &__header {
-              margin-top: 0;
-              @media (min-width: 500px) {
-                     margin-top: 0.83em;
-              }
-       }
+   &__header {
+      margin-top: 0;
+      @media (min-width: 500px) {
+         margin-top: 0.83em;
+      }
+      margin-bottom: 0;
+   }
 
-       &__subheader {
-              margin-top: 20px;
-              margin-bottom: 10px;
-              font-size: 1rem;
-       }
+   &__subheader {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+   }
 
-       &__timeline-item {
-              padding-left: 50px;
-              text-indent: -50px;
-       }
+   &__timeline-item {
+      padding-left: 50px;
+      text-indent: -50px;
+   }
 
-       &__timeline-year {
-              font-weight: bold;
-              margin-right: 1em;
-       }
+   &__timeline-year {
+      font-weight: bold;
+      margin-right: 1em;
+   }
 
-       &__section-contact {
-              & ul {
-                     margin-top: 0;
-                     margin-bottom: 10px;
-              }
+   &__section-contact {
+      & ul {
+         margin-top: 0;
+         margin-bottom: 10px;
+      }
 
-              & li {
-                     font-size: 0.9rem;
-              }
+      & li {
+         font-size: 0.9rem;
+      }
 
-              & a {
-                     position: relative;
-                     list-style: none;
-                     color: #848fa5;
-                     text-decoration: none;
-                     transition: clip-path 275ms ease;
+      & a {
+         position: relative;
+         list-style: none;
+         color: #848fa5;
+         text-decoration: none;
+         transition: clip-path 275ms ease;
 
-                     &:hover::before {
-                            text-decoration: underline;
-                            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                     }
+         &:hover::before {
+            text-decoration: underline;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+         }
 
-                     &::before {
-                            position: absolute;
-                            content: attr(data-content);
-                            color: #ffebc6;
+         &::before {
+            position: absolute;
+            content: attr(data-content);
+            color: #ffebc6;
 
-                            clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-                            transition: clip-path 275ms ease;
-                     }
-              }
-       }
+            clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+            transition: clip-path 275ms ease;
+         }
+      }
+   }
 }
 
 .adaptive-glass {
-       --glass-lightness: 100%;
-       background: hsl(0, 0%, var(--glass-lightness) / 50%);
-       backdrop-filter: blur(40px);
+   --glass-lightness: 100%;
+   background: hsl(0, 0%, var(--glass-lightness) / 50%);
+   backdrop-filter: blur(40px);
 
-       @media (prefers-color-scheme: dark) {
-              --glass-lightness: 0%;
-       }
+   @media (prefers-color-scheme: dark) {
+      --glass-lightness: 0%;
+   }
 
-       @supports not (backdrop-filter: blur(1px)) {
-              background: hsl(0, 0%, var(--glass-lightness) / 90%);
-       }
+   @supports not (backdrop-filter: blur(1px)) {
+      background: hsl(0, 0%, var(--glass-lightness) / 90%);
+   }
 }

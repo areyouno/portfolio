@@ -6,22 +6,22 @@ const about = () => {
          <span>
             <section>
                <h2 className={"about__header"}>Rreuno Velasco</h2>
-               {/* <p>Digital Craftsman</p> */}
+               <p>Digital Craftsman</p>
             </section>
             <section>
                <h3 className={"about__subheader"}>Work</h3>
                <p>
                   RR is a software engineer based in Manila. He is an
-                  experienced Java developer. Currently, he is exploring Swift
-                  development. When not online, he loves to do sports like
-                  running or basketball, read a book, or work on his typing
-                  speed.
+                  experienced Java developer and loves to solve problems with
+                  code. When not online, he loves to do sports, read a book, or
+                  work on his typing speed. Currently, he is exploring Swift
+                  development.
                </p>
             </section>
          </span>
          <span>
             <section>
-               <h3 className={"about__subheader"}>Timeline</h3>
+               <h3 className={"about__subheader"}>Bio</h3>
                <p className={"about__timeline-item"}>
                   <em className={"about__timeline-year"}>1992</em>
                   Born in Mandaluyong, Philippines.
@@ -38,10 +38,6 @@ const about = () => {
                <p className={"about__timeline-item"}>
                   <em className={"about__timeline-year"}>2017</em>Started
                   working at Accenture, Inc.
-               </p>
-               <p className={"about__timeline-item"}>
-                  <em className={"about__timeline-year"}>2020-Aug</em>Left job
-                  at Accenture, Inc.
                </p>
                <p className={"about__timeline-item"}>
                   <em className={"about__timeline-year"}>2021-Jan</em>Started
